@@ -5,6 +5,7 @@ document.getElementById("b1").style.backgroundColor = "rgb(21, 12, 12,0.9)";
     document.getElementById("b3").style.backgroundColor = "rgb(21, 12, 12,0.1)";
     document.getElementById("b3").style.color = "black";
     document.getElementById("address").innerHTML="Delivery";
+    let mode = "delivery";
     
 function delivery()
 {
@@ -15,6 +16,7 @@ function delivery()
     document.getElementById("b3").style.backgroundColor = "rgb(21, 12, 12,0.1)";
     document.getElementById("b3").style.color = "black";
     document.getElementById("address").innerHTML="Delivery";
+    mode="delivery";
 }
 
 function takeaway()
@@ -26,6 +28,7 @@ function takeaway()
     document.getElementById("b3").style.backgroundColor = "rgb(21, 12, 12,0.1)";
     document.getElementById("b3").style.color = "black";
     document.getElementById("address").innerHTML="Takeaway";
+    mode="takeaway";
 }
 
 function dinein()
@@ -37,6 +40,7 @@ function dinein()
     document.getElementById("b2").style.backgroundColor = "rgb(21, 12, 12,0.1)";
     document.getElementById("b2").style.color = "black";
     document.getElementById("address").innerHTML="Dine-In";
+    mode="dinein";
 }
 
- 
+

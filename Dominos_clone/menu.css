@@ -1,0 +1,85 @@
+
+header{
+    margin-top: 10px;
+    margin-left: 2px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index:3;
+}
+
+
+menu{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center; /* Or stretch/center based on your need */
+    gap: 40px; /* Adjust spacing as needed */
+}
+
+.pizza{
+color:white;
+height:250px;
+width:270px;
+background-repeat:no-repeat;
+border-radius:10px;
+box-shadow: 1px 1px 20px black;
+}
+
+
+.pizza button{
+    position: relative;
+    font-size: large;
+    top:80%;
+    left:80%;
+    background-color: rgb(226, 23, 55);
+    color:white;
+    border:rgb(226, 23, 55) 1px solid;
+    border-radius: 5px;
+}
+
+.pizza button:hover{
+    background-color: rgb(186, 16, 41);
+}
+
+.pizza_name{
+    background-color: black;
+    opacity:0.9;
+    margin:190px 4px 5px 4px;
+    padding: 4px;
+    opacity:0.8;
+    border-radius: 7px;
+    border-top: white 1px dashed;
+}
+
+.mentyp {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    color:rgb(11, 100, 143);
+    border-top: 1px red solid;
+    padding-top: 25px;
+    margin-bottom: 5px;
+  }
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

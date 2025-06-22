@@ -304,6 +304,12 @@
 .new img{
     border-radius: 20px;
 }
+.best_sellers{
+    display:flex;
+}
+#cart{
+    display:none;
+}
 
 
 
