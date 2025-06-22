@@ -90,18 +90,10 @@ function chicken() {
     document.getElementById("garlicbread").style.display="none";
 }
 
-
-// function order(n)
-// {
-//     switch(n)
-//     {
-//         case 1:
-//             var name="Cheese Volcano peppy panner";
-//             var price = 699;
-//             break;    
-//     }
-// }
-
+function cravingveg()
+{
+    veg();
+}
 
 
 

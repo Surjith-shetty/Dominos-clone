@@ -250,6 +250,22 @@
 
 </menutype>
 
+<script>
+    window.onload = function () {
+        const params = new URLSearchParams(window.location.search);
+        const tab = params.get("tab");
+    
+        if (tab === "vegpizza") veg();
+        else if (tab === "nonvegpizza") nonveg();
+        else if (tab === "garlicbread") garlic();
+        else if (tab === "chickenbucket") chicken();
+        else allsel(); // default to showing everything
+    };
+    </script>
+    
+    <script src="dominos.js"></script>
+    
+
 </body>
 
 <script src="dominos.js">
