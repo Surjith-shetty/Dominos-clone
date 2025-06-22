@@ -43,4 +43,74 @@ function dinein()
     mode="dinein";
 }
 
+function resetBorders() {
+    document.getElementById("allsel").style.borderBottom = "2px solid rgb(196, 196, 196)";
+    document.getElementById("veg").style.borderBottom = "2px solid rgb(196, 196, 196)";
+    document.getElementById("nonveg").style.borderBottom = "2px solid rgb(196, 196, 196)";
+    document.getElementById("chicken").style.borderBottom = "2px solid rgb(196, 196, 196)";
+    document.getElementById("garlic").style.borderBottom = "2px solid rgb(196, 196, 196)";
+    document.getElementById("allsel").style.borderBottom = "3px solid blue";
+    document.getElementById("nonvegpizza").style.display="block";
+    document.getElementById("chickenbucket").style.display="block";
+    document.getElementById("vegpizza").style.display="block";
+    document.getElementById("garlicbread").style.display="block";
+}
+
+function allsel() {
+    resetBorders();
+}
+
+function veg() {
+    resetBorders();
+    document.getElementById("veg").style.borderBottom = "3px solid green";
+    document.getElementById("nonvegpizza").style.display="none";
+    document.getElementById("chickenbucket").style.display="none";
+}
+
+function garlic() {
+    resetBorders();
+    document.getElementById("garlic").style.borderBottom = "3px solid green";
+    document.getElementById("vegpizza").style.display = "none";
+    document.getElementById("nonvegpizza").style.display="none";
+    document.getElementById("chickenbucket").style.display="none";
+}
+
+function nonveg() {
+    resetBorders();
+    document.getElementById("nonveg").style.borderBottom = "3px solid orange";
+    document.getElementById("vegpizza").style.display="none";
+    document.getElementById("garlicbread").style.display="none";
+}
+
+function chicken() {
+    resetBorders();
+    document.getElementById("chicken").style.borderBottom = "3px solid orange";
+    document.getElementById("vegpizza").style.display = "none";
+    document.getElementById("nonvegpizza").style.display="none";
+    document.getElementById("garlicbread").style.display="none";
+}
+
+
+// function order(n)
+// {
+//     switch(n)
+//     {
+//         case 1:
+//             var name="Cheese Volcano peppy panner";
+//             var price = 699;
+//             break;    
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
 

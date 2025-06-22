@@ -8,8 +8,33 @@ header{
     padding-top: 10px;
     padding-bottom: 10px;
     z-index:3;
+    
 }
 
+.vegnon_navbar{
+    padding :5px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.vegnon_navbar button{
+    font-size: large;
+    padding :10px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid rgb(196, 196, 196) ;
+    visibility: visible;
+    display: inline-block;
+}
+
+#allsel{
+    border-bottom: 3px solid blue;
+}
+
+.vegnon_navbar button:hover{
+   background-color: rgba(152, 152, 152,0.3) ;
+}
 
 menu{
     display: flex;
@@ -33,7 +58,7 @@ box-shadow: 1px 1px 20px black;
     position: relative;
     font-size: large;
     top:80%;
-    left:80%;
+    left:62%;
     background-color: rgb(226, 23, 55);
     color:white;
     border:rgb(226, 23, 55) 1px solid;
