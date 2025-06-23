@@ -10,23 +10,29 @@
     <header >
         <icon>
             <a href="index.html"> 
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
               </svg>
             </a>
         </icon>
         <span>
-            <b style="font-size: large; font-weight: 600;">Domino's Pizza</b>
+            <b style="font-size: x-large; font-weight: 600;">Domino's Pizza</b>
         </span>
         <br>
         <div class="vegnon_navbar">
-            <button id="allsel" onclick="allsel()">All</button> 
+            <button id="allsel" onclick="allsel()">&nbsp All &nbsp</button> 
             <button id="veg" onclick="veg()">Veg Pizza</button>
             <button id="garlic" onclick="garlic()">Garlic Bread</button> 
             <button id="nonveg" onclick="nonveg()">Non-veg pizza</button>
             <button id="chicken" onclick="chicken()">Chicken bucket</button>
         </div>
-        
+
+        <span class="cart" onclick="window.open('orderpage.html','_self');displaycart();">
+            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="red" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+              </svg>
+              <span style="color:rgb(226, 23, 55)">Cart </span>
+        </span>
         
     </header>
     
@@ -45,77 +51,77 @@
                 <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
                     <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z"/>
                   </svg>
-                  <span id="rupee">699 </span><button onclick="order(1)">Add</button></span>
+                  <span id="rupee">699 </span><button onclick="order(0)">Add</button></span>
             </div>
         </div>
 
         <div class="pizza" onclick="" style="background-image: url(https://cdn.dotpe.in/longtail/store-items/9236909/DV0JBcdw.webp);">
-            <div class="pizza_name"><b>Cheese Volcano peppy panner</b>
+            <div class="pizza_name"><b>Cheese Volcano Farmhouse</b>
                 <br>
                 <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
                     <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z"/>
                   </svg>
-                  <span id="rupee">313 </span><button onclick="">Add</button></span>
+                  <span id="rupee">499 </span><button onclick="order(1)">Add</button></span>
             </div>
         </div>
 
         <div class="pizza" onclick="" style="background-image: url(https://cdn.dotpe.in/longtail/store-items/9236909/DV0JBcdw.webp);">
-            <div class="pizza_name"><b>Cheese Volcano peppy panner</b>
+            <div class="pizza_name"><b>Cheese Volcano tikka panner</b>
                 <br>
                 <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
                     <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z"/>
                   </svg>
-                  <span id="rupee">313 </span><button onclick="">Add</button></span>
+                  <span id="rupee">899 </span><button onclick="order(2)">Add</button></span>
             </div>
         </div>
 
         <div class="pizza" onclick="" style="background-image: url(https://cdn.dotpe.in/longtail/store-items/9236909/DV0JBcdw.webp);">
-            <div class="pizza_name"><b>Cheese Volcano peppy panner</b>
+            <div class="pizza_name"><b>Cheese Volcano cheese mushroom</b>
                 <br>
                 <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
                     <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z"/>
                   </svg>
-                  <span id="rupee">313 </span><button onclick="">Add</button></span>
+                  <span id="rupee">599 </span><button onclick="order(3)">Add</button></span>
             </div>
         </div>
 
         <div class="pizza" id="one" onclick="" style="background-image: url(https://cdn.dotpe.in/longtail/store-items/9236909/DV0JBcdw.webp);">
-            <div class="pizza_name"><b>Cheese Volcano peppy panner</b>
+            <div class="pizza_name"><b>Cheese Volcano margherita</b>
                 <br>
                 <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
                     <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z"/>
                   </svg>
-                  <span id="rupee">699 </span><button onclick="order(1)">Add</button></span>
+                  <span id="rupee">249 </span><button onclick="order(4)">Add</button></span>
             </div>
         </div>
 
         <div class="pizza" onclick="" style="background-image: url(https://cdn.dotpe.in/longtail/store-items/9236909/DV0JBcdw.webp);">
-            <div class="pizza_name"><b>Cheese Volcano peppy panner</b>
+            <div class="pizza_name"><b>Cheese Volcano tangy tomato</b>
                 <br>
                 <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
                     <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z"/>
                   </svg>
-                  <span id="rupee">313 </span><button onclick="">Add</button></span>
+                  <span id="rupee">399 </span><button onclick="order(5)">Add</button></span>
             </div>
         </div>
 
         <div class="pizza" onclick="" style="background-image: url(https://cdn.dotpe.in/longtail/store-items/9236909/DV0JBcdw.webp);">
-            <div class="pizza_name"><b>Cheese Volcano peppy panner</b>
+            <div class="pizza_name"><b>Cheese Volcano bell pepper</b>
                 <br>
                 <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
                     <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z"/>
                   </svg>
-                  <span id="rupee">313 </span><button onclick="">Add</button></span>
+                  <span id="rupee">499 </span><button onclick="order(6)">Add</button></span>
             </div>
         </div>
 
         <div class="pizza" onclick="" style="background-image: url(https://cdn.dotpe.in/longtail/store-items/9236909/DV0JBcdw.webp);">
-            <div class="pizza_name"><b>Cheese Volcano peppy panner</b>
+            <div class="pizza_name"><b>Cheese Volcano fruit funda</b>
                 <br>
                 <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
                     <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z"/>
                   </svg>
-                  <span id="rupee">313 </span><button onclick="">Add</button></span>
+                  <span id="rupee">699 </span><button onclick="order(7)">Add</button></span>
             </div>
         </div>
 
@@ -133,30 +139,42 @@
     <menu>
 
         <div class="pizza" onclick="" style="background-image: url(https://cdn.dotpe.in/longtail/store-items/9236909/DV0JBcdw.webp);">
-            <div class="pizza_name"><b>Cheese Volcano peppy panner</b>
+            <div class="pizza_name"><b>Cheese Volcano crispy chicken</b>
                 <br>
-                <button onclick="">Add</button>
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                    <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z"/>
+                  </svg>
+                  <span id="rupee">799 </span><button onclick="order(8)">Add</button></span>
             </div>
         </div>
 
         <div class="pizza" onclick="" style="background-image: url(https://cdn.dotpe.in/longtail/store-items/9236909/DV0JBcdw.webp);">
-            <div class="pizza_name"><b>Cheese Volcano peppy panner</b>
+            <div class="pizza_name"><b>Cheese Volcano chicken tikka</b>
                 <br>
-                <button onclick="">Add</button>
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                    <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z"/>
+                  </svg>
+                  <span id="rupee">999 </span><button onclick="order(9)">Add</button></span>
             </div>
         </div>
 
         <div class="pizza" onclick="" style="background-image: url(https://cdn.dotpe.in/longtail/store-items/9236909/DV0JBcdw.webp);">
-            <div class="pizza_name"><b>Cheese Volcano peppy panner</b>
+            <div class="pizza_name"><b>Cheese Volcano chicken sausage</b>
                 <br>
-                <button onclick="">Add</button>
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                    <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z"/>
+                  </svg>
+                  <span id="rupee">899 </span><button onclick="order(10)">Add</button></span>
             </div>
         </div>
 
         <div class="pizza" onclick="" style="background-image: url(https://cdn.dotpe.in/longtail/store-items/9236909/DV0JBcdw.webp);">
-            <div class="pizza_name"><b>Cheese Volcano peppy panner</b>
+            <div class="pizza_name"><b>Cheese Volcano chicken grill</b>
                 <br>
-                <button onclick="">Add</button>
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                    <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z"/>
+                  </svg>
+                  <span id="rupee">1099 </span><button onclick="order(11)">Add</button></span>
             </div>
         </div>
 
@@ -175,33 +193,41 @@
     <menu>
 
         <div class="pizza" onclick="" style="background-image: url(https://cdn.dotpe.in/longtail/store-items/9236909/DV0JBcdw.webp);">
-            <div class="pizza_name"><b>Cheese Volcano peppy panner</b>
+            <div class="pizza_name"><b>Garlic panner stuff</b>
                 <br>
-                <button onclick="">Add</button>
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                    <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z"/>
+                  </svg>
+                  <span id="rupee">299 </span><button onclick="order(12)">Add</button></span>
             </div>
         </div>
-
         <div class="pizza" onclick="" style="background-image: url(https://cdn.dotpe.in/longtail/store-items/9236909/DV0JBcdw.webp);">
-            <div class="pizza_name"><b>Cheese Volcano peppy panner</b>
+            <div class="pizza_name"><b>Garlic bread plain cheese</b>
                 <br>
-                <button onclick="">Add</button>
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                    <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z"/>
+                  </svg>
+                  <span id="rupee">199 </span><button onclick="order(13)">Add</button></span>
             </div>
         </div>
-
         <div class="pizza" onclick="" style="background-image: url(https://cdn.dotpe.in/longtail/store-items/9236909/DV0JBcdw.webp);">
-            <div class="pizza_name"><b>Cheese Volcano peppy panner</b>
+            <div class="pizza_name"><b>Garlic bread mushroom stuff</b>
                 <br>
-                <button onclick="">Add</button>
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                    <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z"/>
+                  </svg>
+                  <span id="rupee">249 </span><button onclick="order(14)">Add</button></span>
             </div>
         </div>
-
         <div class="pizza" onclick="" style="background-image: url(https://cdn.dotpe.in/longtail/store-items/9236909/DV0JBcdw.webp);">
-            <div class="pizza_name"><b>Cheese Volcano peppy panner</b>
+            <div class="pizza_name"><b>Garlic bread cheese chicken</b>
                 <br>
-                <button onclick="">Add</button>
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                    <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z"/>
+                  </svg>
+                  <span id="rupee">399 </span><button onclick="order(15)">Add</button></span>
             </div>
         </div>
-
     </menu>
     <br>
     <br>
@@ -215,33 +241,34 @@
     <menu>
 
         <div class="pizza" onclick="" style="background-image: url(https://cdn.dotpe.in/longtail/store-items/9236909/DV0JBcdw.webp);">
-            <div class="pizza_name"><b>Cheese Volcano peppy panner</b>
+            <div class="pizza_name"><b>Crispy chicken</b>
                 <br>
-                <button onclick="">Add</button>
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                    <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z"/>
+                  </svg>
+                  <span id="rupee">399 </span><button onclick="order(16)">Add</button></span>
             </div>
         </div>
 
         <div class="pizza" onclick="" style="background-image: url(https://cdn.dotpe.in/longtail/store-items/9236909/DV0JBcdw.webp);">
-            <div class="pizza_name"><b>Cheese Volcano peppy panner</b>
+            <div class="pizza_name"><b>Grilled chicken</b>
                 <br>
-                <button onclick="">Add</button>
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                    <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z"/>
+                  </svg>
+                  <span id="rupee">599 </span><button onclick="order(17)">Add</button></span>
             </div>
         </div>
 
         <div class="pizza" onclick="" style="background-image: url(https://cdn.dotpe.in/longtail/store-items/9236909/DV0JBcdw.webp);">
-            <div class="pizza_name"><b>Cheese Volcano peppy panner</b>
+            <div class="pizza_name"><b>Chicken chops</b>
                 <br>
-                <button onclick="">Add</button>
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                    <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z"/>
+                  </svg>
+                  <span id="rupee">449 </span><button onclick="order(18)">Add</button></span>
             </div>
         </div>
-
-        <div class="pizza" onclick="" style="background-image: url(https://cdn.dotpe.in/longtail/store-items/9236909/DV0JBcdw.webp);">
-            <div class="pizza_name"><b>Cheese Volcano peppy panner</b>
-                <br>
-                <button onclick="">Add</button>
-            </div>
-        </div>
-
         
 
     </menu>
@@ -250,7 +277,7 @@
 
 </menutype>
 
-<script>
+<script src="dominos.js">
     window.onload = function () {
         const params = new URLSearchParams(window.location.search);
         const tab = params.get("tab");
@@ -263,12 +290,8 @@
     };
     </script>
     
-    <script src="dominos.js"></script>
     
 
 </body>
 
-<script src="dominos.js">
-
-</script>
 </html>

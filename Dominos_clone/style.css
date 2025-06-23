@@ -307,9 +307,14 @@
 .best_sellers{
     display:flex;
 }
-#cart{
-    display:none;
+
+#footer{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-
+/* .cart{
+    display: none;
+} */
 

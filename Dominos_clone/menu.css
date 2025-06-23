@@ -8,7 +8,22 @@ header{
     padding-top: 10px;
     padding-bottom: 10px;
     z-index:3;
-    
+}
+
+.cart{
+    top:0;
+    right:0;
+    position:absolute;
+    z-index: 4;
+    font-size: 22px;
+    /* background-color:rgb(226, 23, 55); */
+    padding:4px;
+    border:1px solid rgb(226, 23, 55);
+    border-radius: 8px;
+}
+
+.cart:hover{
+    border:2px solid rgb(226, 23, 55);
 }
 
 .vegnon_navbar{
@@ -71,7 +86,6 @@ box-shadow: 1px 1px 20px black;
 
 .pizza_name{
     background-color: black;
-    opacity:0.9;
     margin:190px 4px 5px 4px;
     padding: 4px;
     opacity:0.8;
