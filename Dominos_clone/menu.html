@@ -6,8 +6,12 @@
     <title>Menu~Dominos</title>
     <link rel="stylesheet" href="menu.css">
 </head>
-<body>
-    <header >
+<body onload="menupage()">
+
+        <div id="firstpage">
+
+
+    <header style="background-color:white;" >
         <icon>
             <a href="index.html"> 
             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
@@ -16,7 +20,7 @@
             </a>
         </icon>
         <span>
-            <b style="font-size: x-large; font-weight: 600;">Domino's Pizza</b>
+            <b style="font-size: x-large; font-weight: 600;color:black">Domino's Pizza</b>
         </span>
         <br>
         <div class="vegnon_navbar">
@@ -27,7 +31,7 @@
             <button id="chicken" onclick="chicken()">Chicken bucket</button>
         </div>
 
-        <span class="cart" onclick="window.open('orderpage.html','_self');displaycart();">
+        <span class="cart" onclick="orderpage()">
             <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="red" class="bi bi-cart-fill" viewBox="0 0 16 16">
                 <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
               </svg>
@@ -51,7 +55,7 @@
                 <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
                     <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z"/>
                   </svg>
-                  <span id="rupee">699 </span><button onclick="order(0)">Add</button></span>
+                  <span id="rupee">699 </span><button onclick="idone()">Add</button></span>
             </div>
         </div>
 
@@ -61,7 +65,7 @@
                 <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
                     <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z"/>
                   </svg>
-                  <span id="rupee">499 </span><button onclick="order(1)">Add</button></span>
+                  <span id="rupee">499 </span><button onclick="idtwo()">Add</button></span>
             </div>
         </div>
 
@@ -276,6 +280,518 @@
     </div>
 
 </menutype>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="secondpage">
+
+    <header >
+        <icon onclick="menupage()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="white" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+              </svg>
+        </icon>
+        <span>
+            <b style="font-size: x-large; font-weight: 600;">Domino's Pizza</b>
+        </span>
+        <br>
+    </header>
+
+
+    <div class="cart_container">
+
+        <div class="order_number">
+        
+            <!-- start -->
+            <div class="cartorder" id="cartorderone">
+
+                <div class="cont1">
+                <span class="image">
+                    <img src="https://cdn.dotpe.in/longtail/store-items/9236909/DV0JBcdw.webp"  height="90px" width="100px">
+                </span>
+                </div>
+
+                <div class="cont2">
+                <span class="nameofpizza">Cheese Volcano peppy panner</span><br>
+                <span class="tagofpizza">Regular</span>
+                </div>
+
+                <div class="cont3">
+                <span class="amount">8 699</span>
+                <span class="multiplyorder">
+                    <button>-</button>
+                    <button>1</button>
+                    <button>+</button>
+                </span>
+                </div>
+
+            </div>
+
+
+            <div class="cartorder" id="cartordertwo">
+
+                <div class="cont1">
+                <span class="image">
+                    <img src="https://cdn.dotpe.in/longtail/store-items/9236909/DV0JBcdw.webp"  height="90px" width="100px">
+                </span>
+                </div>
+
+                <div class="cont2">
+                <span class="nameofpizza">Cheese Volcano Farmhouse</span><br>
+                <span class="tagofpizza">Regular</span>
+                </div>
+
+                <div class="cont3">
+                <span class="amount">8 499</span>
+                <span class="multiplyorder">
+                    <button>-</button>
+                    <button>1</button>
+                    <button>+</button>
+                </span>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+            <div class="cartorder">
+
+                <div class="cont1">
+                <span class="image">
+                    <img src="https://cdn.dotpe.in/longtail/store-items/9236909/DV0JBcdw.webp"  height="100px" width="100px">
+                </span>
+                </div>
+
+                <div class="cont2">
+                <span class="nameofpizza">Margherita</span><br>
+                <span class="tagofpizza">Regular</span>
+                </div>
+
+                <div class="cont3">
+                <span class="amount">8 899</span>
+                <span class="multiplyorder">
+                    <button>-</button>
+                    <button>1</button>
+                    <button>+</button>
+                </span>
+                </div>
+
+            </div>
+
+
+            <div class="cartorder">
+
+                <div class="cont1">
+                <span class="image">
+                    <img src="https://cdn.dotpe.in/longtail/store-items/9236909/DV0JBcdw.webp"  height="100px" width="100px">
+                </span>
+                </div>
+
+                <div class="cont2">
+                <span class="nameofpizza">Margherita</span><br>
+                <span class="tagofpizza">Regular</span>
+                </div>
+
+                <div class="cont3">
+                <span class="amount">8 899</span>
+                <span class="multiplyorder">
+                    <button>-</button>
+                    <button>1</button>
+                    <button>+</button>
+                </span>
+                </div>
+
+            </div>
+
+
+            <div class="cartorder">
+
+                <div class="cont1">
+                <span class="image">
+                    <img src="https://cdn.dotpe.in/longtail/store-items/9236909/DV0JBcdw.webp"  height="100px" width="100px">
+                </span>
+                </div>
+
+                <div class="cont2">
+                <span class="nameofpizza">Margherita</span><br>
+                <span class="tagofpizza">Regular</span>
+                </div>
+
+                <div class="cont3">
+                <span class="amount">8 899</span>
+                <span class="multiplyorder">
+                    <button>-</button>
+                    <button>1</button>
+                    <button>+</button>
+                </span>
+                </div>
+
+            </div>
+
+
+            <div class="cartorder">
+
+                <div class="cont1">
+                <span class="image">
+                    <img src="https://cdn.dotpe.in/longtail/store-items/9236909/DV0JBcdw.webp"  height="100px" width="100px">
+                </span>
+                </div>
+
+                <div class="cont2">
+                <span class="nameofpizza">Margherita</span><br>
+                <span class="tagofpizza">Regular</span>
+                </div>
+
+                <div class="cont3">
+                <span class="amount">8 899</span>
+                <span class="multiplyorder">
+                    <button>-</button>
+                    <button>1</button>
+                    <button>+</button>
+                </span>
+                </div>
+
+            </div>
+
+            <div class="cartorder">
+
+                <div class="cont1">
+                <span class="image">
+                    <img src="https://cdn.dotpe.in/longtail/store-items/9236909/DV0JBcdw.webp"  height="100px" width="100px">
+                </span>
+                </div>
+
+                <div class="cont2">
+                <span class="nameofpizza">Margherita</span><br>
+                <span class="tagofpizza">Regular</span>
+                </div>
+
+                <div class="cont3">
+                <span class="amount">8 899</span>
+                <span class="multiplyorder">
+                    <button>-</button>
+                    <button>1</button>
+                    <button>+</button>
+                </span>
+                </div>
+
+            </div>
+
+            <div class="cartorder">
+
+                <div class="cont1">
+                <span class="image">
+                    <img src="https://cdn.dotpe.in/longtail/store-items/9236909/DV0JBcdw.webp"  height="100px" width="100px">
+                </span>
+                </div>
+
+                <div class="cont2">
+                <span class="nameofpizza">Margherita</span><br>
+                <span class="tagofpizza">Regular</span>
+                </div>
+
+                <div class="cont3">
+                <span class="amount">8 899</span>
+                <span class="multiplyorder">
+                    <button>-</button>
+                    <button>1</button>
+                    <button>+</button>
+                </span>
+                </div>
+
+            </div>
+
+            <div class="cartorder">
+
+                <div class="cont1">
+                <span class="image">
+                    <img src="https://cdn.dotpe.in/longtail/store-items/9236909/DV0JBcdw.webp"  height="100px" width="100px">
+                </span>
+                </div>
+
+                <div class="cont2">
+                <span class="nameofpizza">Margherita</span><br>
+                <span class="tagofpizza">Regular</span>
+                </div>
+
+                <div class="cont3">
+                <span class="amount">8 899</span>
+                <span class="multiplyorder">
+                    <button>-</button>
+                    <button>1</button>
+                    <button>+</button>
+                </span>
+                </div>
+
+            </div>
+
+            <div class="cartorder">
+
+                <div class="cont1">
+                <span class="image">
+                    <img src="https://cdn.dotpe.in/longtail/store-items/9236909/DV0JBcdw.webp"  height="100px" width="100px">
+                </span>
+                </div>
+
+                <div class="cont2">
+                <span class="nameofpizza">Margherita</span><br>
+                <span class="tagofpizza">Regular</span>
+                </div>
+
+                <div class="cont3">
+                <span class="amount">8 899</span>
+                <span class="multiplyorder">
+                    <button>-</button>
+                    <button>1</button>
+                    <button>+</button>
+                </span>
+                </div>
+
+            </div>
+
+            <div class="cartorder">
+
+                <div class="cont1">
+                <span class="image">
+                    <img src="https://cdn.dotpe.in/longtail/store-items/9236909/DV0JBcdw.webp"  height="100px" width="100px">
+                </span>
+                </div>
+
+                <div class="cont2">
+                <span class="nameofpizza">Margherita</span><br>
+                <span class="tagofpizza">Regular</span>
+                </div>
+
+                <div class="cont3">
+                <span class="amount">8 899</span>
+                <span class="multiplyorder">
+                    <button>-</button>
+                    <button>1</button>
+                    <button>+</button>
+                </span>
+                </div>
+
+            </div>
+
+            <div class="cartorder">
+
+                <div class="cont1">
+                <span class="image">
+                    <img src="https://cdn.dotpe.in/longtail/store-items/9236909/DV0JBcdw.webp"  height="100px" width="100px">
+                </span>
+                </div>
+
+                <div class="cont2">
+                <span class="nameofpizza">Margherita</span><br>
+                <span class="tagofpizza">Regular</span>
+                </div>
+
+                <div class="cont3">
+                <span class="amount">8 899</span>
+                <span class="multiplyorder">
+                    <button>-</button>
+                    <button>1</button>
+                    <button>+</button>
+                </span>
+                </div>
+
+            </div>
+
+            <div class="cartorder">
+
+                <div class="cont1">
+                <span class="image">
+                    <img src="https://cdn.dotpe.in/longtail/store-items/9236909/DV0JBcdw.webp"  height="100px" width="100px">
+                </span>
+                </div>
+
+                <div class="cont2">
+                <span class="nameofpizza">Margherita</span><br>
+                <span class="tagofpizza">Regular</span>
+                </div>
+
+                <div class="cont3">
+                <span class="amount">8 899</span>
+                <span class="multiplyorder">
+                    <button>-</button>
+                    <button>1</button>
+                    <button>+</button>
+                </span>
+                </div>
+
+            </div>
+
+            <div class="cartorder">
+
+                <div class="cont1">
+                <span class="image">
+                    <img src="https://cdn.dotpe.in/longtail/store-items/9236909/DV0JBcdw.webp"  height="100px" width="100px">
+                </span>
+                </div>
+
+                <div class="cont2">
+                <span class="nameofpizza">Margherita</span><br>
+                <span class="tagofpizza">Regular</span>
+                </div>
+
+                <div class="cont3">
+                <span class="amount">8 899</span>
+                <span class="multiplyorder">
+                    <button>-</button>
+                    <button>1</button>
+                    <button>+</button>
+                </span>
+                </div>
+
+            </div>
+
+            <div class="cartorder">
+
+                <div class="cont1">
+                <span class="image">
+                    <img src="https://cdn.dotpe.in/longtail/store-items/9236909/DV0JBcdw.webp"  height="100px" width="100px">
+                </span>
+                </div>
+
+                <div class="cont2">
+                <span class="nameofpizza">Margherita</span><br>
+                <span class="tagofpizza">Regular</span>
+                </div>
+
+                <div class="cont3">
+                <span class="amount">8 899</span>
+                <span class="multiplyorder">
+                    <button>-</button>
+                    <button>1</button>
+                    <button>+</button>
+                </span>
+                </div>
+
+            </div>
+
+            <div class="cartorder">
+
+                <div class="cont1">
+                <span class="image">
+                    <img src="https://cdn.dotpe.in/longtail/store-items/9236909/DV0JBcdw.webp"  height="100px" width="100px">
+                </span>
+                </div>
+
+                <div class="cont2">
+                <span class="nameofpizza">Margherita</span><br>
+                <span class="tagofpizza">Regular</span>
+                </div>
+
+                <div class="cont3">
+                <span class="amount">8 899</span>
+                <span class="multiplyorder">
+                    <button>-</button>
+                    <button>1</button>
+                    <button>+</button>
+                </span>
+                </div>
+
+            </div>
+
+            <div class="cartorder">
+
+                <div class="cont1">
+                <span class="image">
+                    <img src="https://cdn.dotpe.in/longtail/store-items/9236909/DV0JBcdw.webp"  height="100px" width="100px">
+                </span>
+                </div>
+
+                <div class="cont2">
+                <span class="nameofpizza">Margherita</span><br>
+                <span class="tagofpizza">Regular</span>
+                </div>
+
+                <div class="cont3">
+                <span class="amount">8 899</span>
+                <span class="multiplyorder">
+                    <button>-</button>
+                    <button>1</button>
+                    <button>+</button>
+                </span>
+                </div>
+
+            </div>
+
+            <div class="cartorder">
+
+                <div class="cont1">
+                <span class="image">
+                    <img src="https://cdn.dotpe.in/longtail/store-items/9236909/DV0JBcdw.webp"  height="100px" width="100px">
+                </span>
+                </div>
+
+                <div class="cont2">
+                <span class="nameofpizza">Margherita</span><br>
+                <span class="tagofpizza">Regular</span>
+                </div>
+
+                <div class="cont3">
+                <span class="amount">8 899</span>
+                <span class="multiplyorder">
+                    <button>-</button>
+                    <button>1</button>
+                    <button>+</button>
+                </span>
+                </div>
+
+            </div>
+
+            <!-- end -->
+
+
+
+        </div>
+
+        <div class="order_credentials">
+
+
+
+        </div>
+
+
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <script src="dominos.js">
     window.onload = function () {

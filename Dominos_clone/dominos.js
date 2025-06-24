@@ -109,72 +109,80 @@ const pizza = [{name: "Cheese Volcano peppy panner",price:699},{name:"Cheese Vol
                 { name:"Crispy chicken",price:399 }, { name:"Grilled chicken",price: 599}, { name:"Chicken chops",price:449 } ];
                 //chicken bucket
 
-let orders=[];
-let temporders=[];
+// let orders=[];
+// let temporders=[];
 
-function order(n) {
-    let orders = JSON.parse(localStorage.getItem('orders')) || [];
-    orders.push(pizza[n]);
-    localStorage.setItem('orders', JSON.stringify(orders));
-    alert("✅ Added to cart!");
-  }
-
-
-//display in DOM
-function displaycart() {
-    const orders = JSON.parse(localStorage.getItem('orders')) || [];
-  
-    const container = document.querySelector('.order_number'); // Make sure this exists in HTML
-    if (!container) return; // Exit if not on order page
-  
-    orders.forEach(item => {
-      const cartorder = document.createElement('div');
-      cartorder.className = 'cartorder';
-  
-      const cont2 = document.createElement('div');
-      cont2.className = 'cont2';
-  
-      const name = document.createElement('span');
-      name.className = 'nameofpizza';
-      name.textContent = item.name;
-  
-      const tag = document.createElement('span');
-      tag.className = 'tagofpizza';
-      tag.textContent = 'Regular';
-  
-      cont2.appendChild(name);
-      cont2.appendChild(document.createElement('br'));
-      cont2.appendChild(tag);
-  
-      const cont3 = document.createElement('div');
-      cont3.className = 'cont3';
-  
-      const amount = document.createElement('span');
-      amount.className = 'amount';
-      amount.textContent = `₹${item.price}`;
-  
-      const mult = document.createElement('span');
-      mult.className = 'multiplyorder';
-      mult.innerHTML = `
-        <button>-</button>
-        <button>1</button>
-        <button>+</button>
-      `;
-  
-      cont3.appendChild(amount);
-      cont3.appendChild(mult);
-  
-      cartorder.appendChild(cont2);
-      cartorder.appendChild(cont3);
-  
-      container.appendChild(cartorder);
-    });
-  }
-  
-  
+// function order(n) {
+//     let orders = JSON.parse(localStorage.getItem('orders')) || [];
+//     orders.push(pizza[n]);
+//     localStorage.setItem('orders', JSON.stringify(orders));
+//     alert("✅ Added to cart!");
+//   }
 
 
+// //display in DOM
+// function displaycart() {
+//     const orders = JSON.parse(localStorage.getItem('orders')) || [];
+  
+//     const container = document.querySelector('.order_number'); // Make sure this exists in HTML
+//     if (!container) return; // Exit if not on order page
+  
+//     orders.forEach(item => {
+//       const cartorder = document.createElement('div');
+//       cartorder.className = 'cartorder';
+  
+//       const cont2 = document.createElement('div');
+//       cont2.className = 'cont2';
+  
+//       const name = document.createElement('span');
+//       name.className = 'nameofpizza';
+//       name.textContent = item.name;
+  
+//       const tag = document.createElement('span');
+//       tag.className = 'tagofpizza';
+//       tag.textContent = 'Regular';
+  
+//       cont2.appendChild(name);
+//       cont2.appendChild(document.createElement('br'));
+//       cont2.appendChild(tag);
+  
+//       const cont3 = document.createElement('div');
+//       cont3.className = 'cont3';
+  
+//       const amount = document.createElement('span');
+//       amount.className = 'amount';
+//       amount.textContent = `₹${item.price}`;
+  
+//       const mult = document.createElement('span');
+//       mult.className = 'multiplyorder';
+//       mult.innerHTML = `
+//         <button>-</button>
+//         <button>1</button>
+//         <button>+</button>
+//       `;
+  
+//       cont3.appendChild(amount);
+//       cont3.appendChild(mult);
+  
+//       cartorder.appendChild(cont2);
+//       cartorder.appendChild(cont3);
+  
+//       container.appendChild(cartorder);
+//     });
+//   }
+  
 
+function orderpage()
+{
+    document.getElementById("secondpage").style.display="block";
+    document.getElementById("firstpage").style.display="none";
+}
+
+function menupage()
+{
+    document.getElementById("firstpage").style.display="block";
+    document.getElementById("secondpage").style.display="none";
+}
 
 
 
